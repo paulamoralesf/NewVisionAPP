@@ -1,0 +1,72 @@
+/*
+.o-object-name: styles for global things, like body/containers/layouts
+.c-component-name: styles for a specific block --> component will be using BEM naming
+.u-utility-name: useful styles, like some basic padding
+.t-theme-name: theme styles, like colors, or background-colors, or border-colors
+._hack-name: nasty stuff, like z-index: 999999, or !important
+.ag-word: styles for ag-grid plugin
+
+BEM (Block Element Modifier)
+.block
+.block__element
+.block--modifier
+ */
+
+
+
+
+@font-face {
+  font-family: Inter;
+  src: local(Inter-Medium), url(./fonts/inter-medium/Inter-Medium.woff2) format('woff2'),
+    url(./fonts/inter-medium/Inter-Medium.woff) format('woff'),
+    url(./fonts/inter-medium/Inter-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local(Inter-SemiBold), url(./fonts/inter-semibold/Inter-SemiBold.woff2) format('woff2'),
+    url(./fonts/inter-semibold/Inter-SemiBold.woff) format('woff'),
+    url(./fonts/inter-semibold/Inter-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local(Inter-Bold), url(./fonts/inter-bold/Inter-Bold.woff2) format('woff2'),
+    url(./fonts/inter-bold/Inter-Bold.woff) format('woff'),
+    url(./fonts/inter-bold/Inter-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+$smartphone-font-size: 16px;
+$font-family: Inter, sans-serif;
+
+html {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: #{$font-family};
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+

@@ -4,3 +4,7 @@
 /* ------------------------------------- ASSETS --------------------------------------------- */
 
 @import '../node_modules/primeng/resources/primeng.min.css';
+
+/* Global classes and variables */
+@import './assets/reset.scss';
+@import './assets/app.scss';
