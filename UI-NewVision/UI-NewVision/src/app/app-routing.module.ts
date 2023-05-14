@@ -5,12 +5,12 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'provider',
+    path: 'providers',
     loadChildren: () =>
       import('./providers/providers.module').then((m) => m.ProvidersModule),
   },
   {
-    path: 'client',
+    path: 'clients',
     loadChildren: () =>
       import('./clients/clients.module').then((m) => m.ClientsModule),
   },
